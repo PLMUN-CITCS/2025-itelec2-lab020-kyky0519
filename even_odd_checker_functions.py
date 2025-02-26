@@ -21,12 +21,9 @@ def check_even_odd(number: int) -> str:
     Returns:
         str: A formatted string indicating whether the number is even or odd.
     """
-    if number % 2 == 0:
-        return f"{number} is an Even number."
-    else:
-        return f"{number} is an Odd number."
+    return f"{number} is an {'Even' if number % 2 == 0 else 'Odd'} number."
 
-def main():
+def main() -> None:
     """
     Main program flow to get input, check even/odd status, and display the result.
     """
@@ -36,3 +33,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
